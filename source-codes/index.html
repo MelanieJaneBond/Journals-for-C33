@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Daily Journal</title>
-    <link rel="stylesheet" href="journal.css">
+    <link rel="stylesheet" href="journal.css"/>
 </head>
 <body>
     <h1>Daily Journal</h1>
-    <form action="">
+    <form>
         <fieldset>
-            <label for="journalDate">Date of Entry</label>
+            <label for="journalDate">What day is it?</label>
                 <input type="date" name="journalDate" id="journalDate">
             </label>
         </fieldset>
@@ -20,17 +20,24 @@
             <input type="text" name="conceptsCovered" id="conceptsCovered">
         </fieldset>
         <fieldset>
-            <label for="journalEntry">Journal Here: </label>
-            <input type="text" name="journalEntry" id="journalEntry">
+            <label for="journalEntry">Journal it up! </label>
+            <textarea name="journalEntry" id="journalEntry" cols="30" rows="10"></textarea>
         </fieldset>
         <fieldset>
             <label for="howIFeel">How do you feel about today?</label>
-            <input type="range" name="howIFeel" id="howIFeel">
+            <select>
+                <option>it's just another Monday</option>
+                <option>frustrated</option>
+                <option>in need of self-care</option>
+                <option>giddy about what I completed</option>
+                <option>ready for more</option>
+                <option>ready to party</option>
+                <option>somewhere in the middle</option>
+            </select>
         </fieldset>
         <fieldset>
             <input type="button" value="Save this Journal Entry">
         </fieldset>
     </form>
-    
 </body>
 </html>

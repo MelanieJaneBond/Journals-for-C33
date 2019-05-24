@@ -1,4 +1,16 @@
 body {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    color: purple;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: purple;
+    font-family: monospace;
 }
