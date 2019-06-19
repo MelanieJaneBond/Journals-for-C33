@@ -6,24 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Daily Journal</title>
     <link rel="stylesheet" href="journal.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Daily Journal</h1>
     <form>
-        <fieldset>
+        <fieldset class="entryDate">
             <label for="journalDate">What day is it?</label>
                 <input type="date" name="journalDate" id="journalDate">
             </label>
         </fieldset>
-        <fieldset>
+        <fieldset class="concepts">
             <label for="conceptsCovered">Concepts Covered Today</label>
             <input type="text" name="conceptsCovered" id="conceptsCovered">
         </fieldset>
-        <fieldset>
+        <fieldset class="entry">
             <label for="journalEntry">Journal it up! </label>
             <textarea name="journalEntry" id="journalEntry" cols="30" rows="10"></textarea>
         </fieldset>
-        <fieldset>
+        <fieldset class="mood">
             <label for="howIFeel">How do you feel about today?</label>
             <select>
                 <option>it's just another Monday</option>
@@ -35,9 +36,16 @@
                 <option>somewhere in the middle</option>
             </select>
         </fieldset>
-        <fieldset>
+        <fieldset class="saveIt">
             <input type="button" value="Save this Journal Entry">
         </fieldset>
     </form>
+    <article class="entryLog">
+
+    </article>
+<script src="scripts/data.js"></script>
+<script src="scripts/journals.js"></script>
+<script src="scripts/entriesComponent.js"></script>
+<script src="scripts/entriesDOM.js"></script>
 </body>
 </html>

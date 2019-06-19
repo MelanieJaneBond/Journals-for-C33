@@ -1,16 +1,39 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: monospace;
+    font-family: 'Mali', cursive;
     color: purple;
+    background-color: palevioletred;
+    border-style: none;
+}
+
+h1 {
+    text-align: center;
 }
 
 fieldset {
     display: flex;
     flex-direction: column;
+    border-style: dashed;
+    border-color: palegreen;
 }
 
 label {
     color: purple;
-    font-family: monospace;
+    font-family: 'Mali', cursive;
+}
+
+input {
+    background-color: pink;
+    font-family: 'Mali', cursive;
+}
+
+textarea {
+    background-color: lightseagreen;
+    font-family: 'Mali', cursive;
+}
+
+select {
+    background-color: pink;
+    font-family: 'Mali', cursive;
 }
